@@ -17,23 +17,18 @@ public class CFComputerPlayer extends Player
     {
         Random rand = new Random();
         int move = rand.nextInt(7);
-        boolean played = false;
-
-        for(int i = 5; i >=0; i--)
+        boolean played = true;
+        while (!played)
         {
-            if (board.isEmpty(i, move))
+            for(int i = board.board.length-1; i >=0; i--)
             {
+                if (!board.isEmpty(i, move)) continue;
                 board.putPiece(new Piece(name, board, i, move),
                     i, move);
-                played = true;
                 System.out.printf("\n X plays: %d\n", move);
+                played = true;
                 break;
             }
-        }
-        
-        if (played == false)
-        {
-            playAMove();
         }
         
     }// playAMove method
