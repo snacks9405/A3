@@ -15,11 +15,11 @@ public class CFComputerPlayer extends Player
 
     public void playAMove()
     {
-        Random rand = new Random();
-        int move = rand.nextInt(7);
         boolean played = true;
         while (!played)
         {
+            Random rand = new Random();
+            int move = rand.nextInt(7);
             for(int i = board.board.length-1; i >=0; i--)
             {
                 if (!board.isEmpty(i, move)) continue;
