@@ -23,12 +23,14 @@ public class CFPlayer extends Player
             play = scan.nextInt() - 1;
             if (play < 0 || play > 6)
                 throw new InputMismatchException();
+                
             for(int i = 5; i >= -1; i--)
             {
                 if (i == -1)
                 {
                     throw new InputMismatchException();
                 }
+                
                 if (board.isEmpty(i, play))
                 {
                     board.putPiece(
@@ -36,6 +38,7 @@ public class CFPlayer extends Player
                     break;
                 }
             }
+            
         }catch(InputMismatchException e)
         {
             System.out.print("\n Invalid move. Try again!");

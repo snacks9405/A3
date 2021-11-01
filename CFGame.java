@@ -1,5 +1,5 @@
 /**
- * Write a description of class CFGame here.
+ * Represents a game of Connect Four
  *
  * @author (your name)
  * @version (a version number or a date)
