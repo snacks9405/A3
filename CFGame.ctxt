@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=CFGame
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CFGame\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=board
+comment1.target=CFGame(Board)
+comment2.params=
+comment2.target=CFGame()
+comment3.params=
+comment3.target=void\ newGame()
+comment3.text=\r\n\ Starts\ a\ new\ Connect\ Four\ game\r\n
+comment4.params=
+comment4.target=void\ setUp()
+comment5.params=
+comment5.target=boolean\ gameOver()
+comment6.params=
+comment6.target=void\ wrapUp()
+numComments=7

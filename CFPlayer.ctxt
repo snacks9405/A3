@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CFPlayer
+comment1.params=name\ game
+comment1.target=CFPlayer(java.lang.String,\ Game)
+comment2.params=
+comment2.target=void\ playAMove()
+numComments=3
