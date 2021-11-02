@@ -51,7 +51,8 @@ public class CFGame extends Game
                 boolean horiz = validCheck(p, length, y, x, 0, 1); // is there a horizantal match
                 boolean verti = validCheck(p, length, y, x, 1, 0); // ...
                 boolean diagn = validCheck(p, length, y, x, 1, 1); // ...
-                if(horiz || verti || diagn)
+                boolean udiagn = validCheck(p, length, y, x, -1, 1); // ...
+                if(horiz || verti || diagn || udiagn)
                 {
                     winner = currentPlayer;
                     return true;
