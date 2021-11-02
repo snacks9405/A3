@@ -15,35 +15,62 @@ public class CFPlayer extends Player
 
     public void playAMove()
     {
+        game.currentPlayer = this;
         Scanner scan = new Scanner(System.in);
-        int play = 0;
         System.out.printf("\n%s plays: ", name);
+        while(!tryMove(scan.nextInt() - 1))
+            System.out.print("\n Invalid move. Try again!");
+
+    }// playAMove method
+    
+    
+    /*
+     * Trys to play a move, executes move if successfull
+     * 
+     * @param the x position to try
+     * 
+     * @return if the move was successfull
+     */
+    boolean tryMove(int x)
+    {
         try
         {
-            play = scan.nextInt() - 1;
-            if (play < 0 || play > 6)
-                throw new InputMismatchException();
-                
-            for(int i = 5; i >= -1; i--)
-            {
-                if (i == -1)
-                {
-                    throw new InputMismatchException();
-                }
-                
-                if (board.isEmpty(i, play))
-                {
-                    board.putPiece(
-                        new Piece(name, board, i, play), i, play);
-                    break;
-                }
-            }
+            int y = getMovePosition(x);
+            placePiece(y, x);
+            return true;
             
         }catch(InputMismatchException e)
         {
-            System.out.print("\n Invalid move. Try again!");
-            playAMove();
+            return false;
         }
-
-    }// playAMove method
+    }
+    /*
+     * Places a piece at given location
+     * 
+     * @param y  the y position of new piece
+     * @param x  the x position of new piece
+     */
+    void placePiece(int y, int x)
+    {
+        board.putPiece(new Piece(name, board, y, x), y, x);
+    }
+    /*
+     * Checks a move and gets the y position of said move
+     * 
+     * @param move   the x position of the move
+     * 
+     * @return the y position of the move
+     */
+    int getMovePosition(int x) throws InputMismatchException
+    {
+        if(x < 0 || x >= board.board[0].length)
+            throw new InputMismatchException();
+        for(int i=game.board.board.length-1; i>=0; i--)
+        {
+            if(board.isEmpty(i, x))
+                return i;
+        }
+        throw new InputMismatchException();
+    }
+    
 }// CFPlayer class
