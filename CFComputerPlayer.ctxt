@@ -2,6 +2,8 @@
 comment0.target=CFComputerPlayer
 comment1.params=name\ game
 comment1.target=CFComputerPlayer(java.lang.String,\ Game)
+comment1.text=\r\n\ constructor\ for\ objects\ of\ type\ CFComputerPlayer\r\n\ \r\n\ @param\ name\ \ \ \ \ \ name\ of\ computer\ player\r\n\ @param\ game\ \ \ \ \ \ game\ of\ CF\ that\ computer\ player\ is\ in\r\n\ \r\n
 comment2.params=
 comment2.target=void\ playAMove()
+comment2.text=\r\n\ attempts\ moves\ until\ one\ is\ played\ successfully\ \r\n
 numComments=3

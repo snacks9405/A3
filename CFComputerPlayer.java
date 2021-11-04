@@ -1,8 +1,9 @@
 /**
- * Write a description of class CFComputerPlayer here.
+ * describes a basic ai opponent for a game of CF
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author alex rodriguez
+ *         michael hulbert
+ * @version 11.8.21
  */
 import java.util.Random;
 import java.util.InputMismatchException;
@@ -11,12 +12,22 @@ public class CFComputerPlayer extends CFPlayer // extending CFPlayer instead of 
 {
     private Random rand;
     
+    /**
+     * constructor for objects of type CFComputerPlayer
+     * 
+     * @param name      name of computer player
+     * @param game      game of CF that computer player is in
+     * 
+     */
     public CFComputerPlayer(String name, Game game)
     {
         super(name, game);
         rand = new Random();
     }// constructor
-
+    
+    /**
+     * attempts moves until one is played successfully 
+     */
     public void playAMove()
     {
         game.currentPlayer = this;

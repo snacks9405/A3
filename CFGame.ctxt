@@ -1,20 +1,25 @@
 #BlueJ class context
 comment0.target=CFGame
-comment0.text=\r\n\ Represents\ a\ game\ of\ Connect\ Four\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Represents\ a\ game\ of\ CF\r\n\r\n\ @author\ alex\ rodriguez\r\n\ \ \ \ \ \ \ \ \ michael\ hulbert\r\n\ @version\ 11.8.21\r\n
 comment1.params=board
 comment1.target=CFGame(Board)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CFGame\r\n\ \r\n\ @param\ board\ \ \ \ \ CFBoard\ to\ match\ the\ game\ is\ started\ with\r\n
 comment2.params=
 comment2.target=CFGame()
+comment2.text=\r\n\ no\ parameter\ Constructor\ for\ objects\ of\ class\ CFGame\r\n
 comment3.params=
 comment3.target=void\ newGame()
 comment3.text=\r\n\ Starts\ a\ new\ Connect\ Four\ game\r\n
 comment4.params=
 comment4.target=void\ setUp()
+comment4.text=\r\n\ Initializes\ players\ of\ the\ CF\ game\r\n
 comment5.params=
 comment5.target=boolean\ gameOver()
+comment5.text=\r\n\ Gameover\ check\ for\ the\ CF\ game\r\n
 comment6.params=
 comment6.target=void\ wrapUp()
+comment6.text=\r\n\ Announces\ winner\ (or\ not)\ of\ the\ CF\ game\r\n
 comment7.params=compare\ length\ y\ x\ dy\ dx
 comment7.target=boolean\ validCheck(Piece,\ int,\ int,\ int,\ int,\ int)
-comment7.text=\r\n\ Checks\ a\ row,\ column,\ or\ diagnol\ for\ a\ match\ with\ the\ given\ piece\r\n\ \r\n\ @param\ compare\ \ \ \ the\ peice\ to\ compare\ against\r\n\ @param\ length\ \ \ \ \ the\ length\ the\ check\ must\ be\r\n\ @param\ y\ \ \ \ \ \ \ \ \ \ the\ inital\ y\ position\r\n\ @param\ x\ \ \ \ \ \ \ \ \ \ the\ inital\ x\ position\r\n\ @param\ dx\ \ \ \ \ \ \ \ \ delta\ x\ \:\ how\ far\ to\ translate\ x\ on\ check\r\n\ @param\ dy\ \ \ \ \ \ \ \ \ delta\ y\ \:\ how\ far\ to\ translate\ y\ on\ check\r\n\ \r\n\ @return\ is\ there\ a\ valid\ line\r\n
+comment7.text=\r\n\ Checks\ a\ row,\ column,\ or\ diagonal\ for\ a\ match\ with\ the\ given\ piece\r\n\ \r\n\ @param\ compare\ \ \ \ the\ peice\ to\ compare\ against\r\n\ @param\ length\ \ \ \ \ the\ length\ the\ check\ must\ be\r\n\ @param\ y\ \ \ \ \ \ \ \ \ \ the\ inital\ y\ position\r\n\ @param\ x\ \ \ \ \ \ \ \ \ \ the\ inital\ x\ position\r\n\ @param\ dx\ \ \ \ \ \ \ \ \ delta\ x\ \:\ how\ far\ to\ translate\ x\ on\ check\r\n\ @param\ dy\ \ \ \ \ \ \ \ \ delta\ y\ \:\ how\ far\ to\ translate\ y\ on\ check\r\n\ \r\n\ @return\ is\ there\ a\ valid\ line\r\n
 numComments=8

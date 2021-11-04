@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=CFBoard
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CFBoard\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ describes\ a\ board\ of\ CF\r\n\r\n\ @author\ alex\ rodriguez\r\n\ \ \ \ \ \ \ \ \ michael\ hulbert\r\n\ @version\ 11.8.21\r\n
 comment1.params=game\ numRows\ numColumns
 comment1.target=CFBoard(Game,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CFBoard\r\n\ \r\n\ @param\ game\ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ CF\ game\ this\ board\ is\ for\r\n\ @param\ numRows\ \ \ \ \ \ \ \ \ \ \ the\ number\ of\ rows\ on\ this\ board\r\n\ @param\ numColumns\ \ \ \ \ \ \ \ the\ number\ of\ columns\ on\ this\ board\r\n
 comment2.params=
 comment2.target=void\ display()
+comment2.text=\r\n\ Displays\ the\ board\ on\ the\ terminal\ windows\r\n
 numComments=3

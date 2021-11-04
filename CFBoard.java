@@ -1,16 +1,27 @@
 /**
- * Write a description of class CFBoard here.
+ * describes a board of CF
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author alex rodriguez
+ *         michael hulbert
+ * @version 11.8.21
  */
 public class CFBoard extends Board
 {
+    /**
+     * Constructor for objects of class CFBoard
+     * 
+     * @param game              the CF game this board is for
+     * @param numRows           the number of rows on this board
+     * @param numColumns        the number of columns on this board
+     */
     public CFBoard(Game game, int numRows, int numColumns)
     {
         super(game, numRows, numColumns);
     }// constructor
-
+    
+    /**
+     * Displays the board on the terminal windows
+     */
     @Override
     public void display()
     {
