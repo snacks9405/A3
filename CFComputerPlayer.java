@@ -33,6 +33,6 @@ public class CFComputerPlayer extends CFPlayer // extending CFPlayer instead of 
         game.currentPlayer = this;
         int x;
         while(!tryMove(x = rand.nextInt(board.board[0].length)));
-        System.out.printf("\n %s plays: %d\n", name, x+1);
+        System.out.printf("\n%s plays: %d\n", name, x+1);
     }// playAMove method
 }// CFComputerPlayer class
